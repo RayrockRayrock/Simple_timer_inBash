@@ -1,6 +1,10 @@
 git clone this repo
 
-put this script「timer」in somewhere that you can execute like .local/bin/\n
+cd into it
+
+make this script executable chmod u+x timer
+
+put this script「timer」in somewhere that you can execute like .local/bin/
 
 usage timer <number follow by sub-fix (s, m, h, d)>
 
