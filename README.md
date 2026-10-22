@@ -1,4 +1,4 @@
-git clone this repo
+git clone this repo,
 put this script「timer」in somewhere that you can execute like .local/bin/
 
 usage
