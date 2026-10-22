@@ -1,28 +1,31 @@
 #!/usr/bin/env bash
-progam_path="$HOME/.local/bin/timer"
-start_audio_path="$HOME/Pictures/meme/startup.mp3"
-timeout_audio_path="$HOME/Pictures/meme/timeoutdeformation.mp3"
 
 
 
-function PrintUsageandHelp(){
-  printf "Usage:\ntimer <pass number and subfix (s, m, h, d) no space\nEx: timer 5s\n"
-  printf "timer set, to open source file in your editor\n"
-  printf "ctrl + z to pause timer type fg to resume\n"
-}
 
-if [[ $1 == "" || $1 == "help" ]];
-then 
-  PrintUsageandHelp
-  exit
-fi
+program_path="where you want to put this script"
+#ex: program_path="$HOME/.local/bin/timer"
+
+
+
+start_audio_path="path to your start audio"
+#ex: start_audio_path="$HOME/Pictures/meme/startup.mp3"
+
+
+
+timeout_audio_path="path to your timeout audio"
+#ex: timeout_audio_path="$HOME/Pictures/meme/timeoutdeformation.mp3"
+
+
 
 
 if [[ $1 == "set" ]];
 then
-  $EDITOR $progam_path
+  $EDITOR $program_path
   exit
 fi
+#type 「timer set」 to open this script with your editor
+#don't forget to set the program_path
 
 
 notify-send "Startup!!!" && paplay $start_audio_path && sleep $1 && notify-send "Timeout!!!!" && paplay $timeout_audio_path
