@@ -11,6 +11,7 @@ put this script「timer」in somewhere that you can execute like .local/bin/
 <h2><bold>usage</bold></h2>
 
 timer <number follow by sub-fix (s, m, h, d)> like timer 5s
+
 timer set open this script in your editor
 
 use ctrl + z to pause timer and fg to resume
