@@ -2,9 +2,12 @@ git clone this repo
 
 cd into it
 
+don't forget to edit this $program_path, $start_audio_path and $timeout_audio_path in this script with your beloved text editor or IDE 
+
 make this script executable chmod u+x timer
 
 put this script「timer」in somewhere that you can execute like .local/bin/
+
 
 usage timer <number follow by sub-fix (s, m, h, d)>
 
